@@ -1,0 +1,9 @@
+build/
+gradle/
+bin/
+.gradle/
+.idea/
+.vscode/
+gradlew
+gradlew.bat
+Footer
