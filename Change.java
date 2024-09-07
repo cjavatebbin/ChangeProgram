@@ -10,8 +10,8 @@ public class Change {
     public String cashInCoins(int cents) {
 
         int q = cents/25; //quarters
-        int d = (cents%25)/10; //dimes
-        int n = (cents%10)/5; //nickels
+        int d = (cents-25*q)/10; //dimes
+        int n = (cents-25*q-10*d)/5; //nickels
         return q + " quarters, " + d + " dimes, and " + n + " nickels";
     }
 
