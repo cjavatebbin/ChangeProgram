@@ -9,18 +9,21 @@
  * You bought an item for 45 cents and gave me a dollar, so your change is 
  * 2 quarters, 0 dimes, and 1 nickels.
  * 
- * @author (your name here)
- * @version (date here)
+ * @author Terence Wu
+ * @version 9/7/2024
  */
 
 import java.util.Scanner;
 
 public class ChangeMain {
+    
     public static void main(String[] args) {
-        // TODO
-        // Note that the cashInCoins method of the Change class doesn't determine the
-        // change
-        // returned. Its job is simply to convert cents to coins.
+
+        Change c = new Change();
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the price of the item in cents: ");
+        int price = s.nextInt();
+        System.out.println("You bought the item for " + price + "cents and gave me a dollar. Your change is "+c.coinsToChange(p)+".");
     }
 
 }
