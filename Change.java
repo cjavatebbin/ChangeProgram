@@ -1,23 +1,18 @@
 
 /**
- * Write a description of class Change here. .
+ * Converts cents to quarters, dimes, and nickels, where the number of cents is between 0 and 75.
  * 
- * @author (your name)
- * @version (a version number or a date)
+ * @author Terence
+ * @version 9/7/2024
  */
 public class Change {
 
-    /**
-     * converts cents to quarters, dimes, nickels
-     * 
-     * precondition: cents is between 0 and 75, inclusive
-     * 
-     * @param cents the number of cents
-     * @return a String in the form "q quarters, d dimes, and n nickels"
-     */
     public String cashInCoins(int cents) {
-        // TODO
-        return ""; // delete this line of code
+
+        int q = cents/25; //quarters
+        int d = (cents%25)/10; //dimes
+        int n = (cents%10)/5; //nickels
+        return q + " quarters, " + d + " dimes, and " + n + " nickels";
     }
 
 }
