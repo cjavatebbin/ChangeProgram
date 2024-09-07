@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Change here.
+ * Write a description of class Change here. .
  * 
  * @author (your name)
  * @version (a version number or a date)
